@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS", "SMS.csproj", "{3E86334F-8C6E-4E89-B544-890449E140DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest", "SmsTest\SmsTest.csproj", "{C39000A3-D4DE-4F4D-9396-E76D7B0B95C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E86334F-8C6E-4E89-B544-890449E140DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E86334F-8C6E-4E89-B544-890449E140DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E86334F-8C6E-4E89-B544-890449E140DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E86334F-8C6E-4E89-B544-890449E140DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39000A3-D4DE-4F4D-9396-E76D7B0B95C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39000A3-D4DE-4F4D-9396-E76D7B0B95C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39000A3-D4DE-4F4D-9396-E76D7B0B95C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39000A3-D4DE-4F4D-9396-E76D7B0B95C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
