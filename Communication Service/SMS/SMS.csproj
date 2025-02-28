@@ -22,10 +22,4 @@
       <None Remove="SmsTest\**" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Domain\" />
-      <Folder Include="Infrastructure\" />
-      <Folder Include="Service\" />
-    </ItemGroup>
-
 </Project>
