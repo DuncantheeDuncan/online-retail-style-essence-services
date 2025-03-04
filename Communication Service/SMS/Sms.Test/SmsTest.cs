@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace SmsTest;
+namespace Sms.Test;
 
 public class SmsTest
 {
