@@ -31,3 +31,53 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+
+# Ignore Rider and JetBrains settings
+.idea/
+*.sln.iml
+
+# Ignore compiled binaries and executables
+*.exe
+*.dll
+*.pdb
+*.log
+*.cache
+
+# Ignore dependencies
+node_modules/
+
+# Ignore system files
+Thumbs.db
+.DS_Store
+
+# Ignore secrets and configuration
+appsettings.json
+appsettings.*.json
+secrets.json
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+
+# Ignore test results
+TestResults/
+
+# Ignore ReSharper and Rider files
+*.DotSettings.user
