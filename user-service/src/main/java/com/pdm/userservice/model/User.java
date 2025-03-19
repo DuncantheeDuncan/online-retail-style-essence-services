@@ -15,7 +15,6 @@ public class User {
     }
 
     public String getPassword(){
-
-        return "Some_user";
+        return "admin";
     }
 }
