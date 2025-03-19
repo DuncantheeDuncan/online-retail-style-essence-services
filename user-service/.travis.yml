@@ -1,0 +1,5 @@
+language: java
+jdk:
+  - openjdk23  # or whichever version you use (like openjdk8 or openjdk17)
+script:
+  - mvn clean install  # This will run your tests using Maven
