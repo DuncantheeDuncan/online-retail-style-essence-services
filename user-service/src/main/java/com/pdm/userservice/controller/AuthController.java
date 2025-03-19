@@ -23,11 +23,16 @@ public class AuthController {
     public String login(@RequestParam String username, @RequestParam String password) {
        try {
 
-           System.out.println(username + " " + password);
-           User user = userService.validateUser(username, password, "");
+           User user = userService.validateUser(username, password);
+
+
+           String tokenString = jwtUtil.generateToken(user.getUsername(), user.getRole());
+
+           System.err.println("User name: "+ jwtUtil.extractUsername(tokenString));
+           System.err.println("User Role: "+ jwtUtil.extractRole(tokenString));
 
            if (user != null) {
-               return jwtUtil.generateToken(user.getUsername(), user.getRole());
+               return tokenString;
            }
            throw new RuntimeException("Invalid credentials");
        } catch (Exception e) {
