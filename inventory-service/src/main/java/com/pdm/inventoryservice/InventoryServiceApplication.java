@@ -1,4 +1,4 @@
-package com.pdm.inventoryservice;
-
-public class InventoryServiceApplication {
-}
+//package com.pdm.inventoryservice;
+//
+//public class InventoryServiceApplication {
+//}

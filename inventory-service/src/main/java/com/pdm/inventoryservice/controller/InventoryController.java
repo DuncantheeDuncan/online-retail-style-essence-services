@@ -1,4 +1,4 @@
-package com.pdm.inventoryservice.controller;
-
-public class InventoryController {
-}
+//package com.pdm.inventoryservice.controller;
+//
+//public class InventoryController {
+//}

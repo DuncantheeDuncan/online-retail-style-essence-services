@@ -1,4 +1,4 @@
-package com.pdm.orderservice;
-
-public class OrderServiceApplication {
-}
+//package com.pdm.orderservice;
+//
+//public class OrderServiceApplication {
+//}

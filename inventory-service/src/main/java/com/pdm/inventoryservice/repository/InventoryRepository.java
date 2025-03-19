@@ -1,4 +1,4 @@
-package com.pdm.inventoryservice.repository;
-
-public class InventoryRepository {
-}
+//package com.pdm.inventoryservice.repository;
+//
+//public class InventoryRepository {
+//}

@@ -1,0 +1,44 @@
+├── online-store
+    ├── api-gateway
+    │   ├── src/main/java/com/example/apigateway
+    │   │   ├── ApiGatewayApplication.java
+    │   │   ├── config/GatewayConfig.java
+    │   ├── pom.xml
+    │
+    ├── product-service
+    │   ├── src/main/java/com/example/productservice
+    │   │   ├── ProductServiceApplication.java
+    │   │   ├── controller/ProductController.java
+    │   │   ├── model/Product.java
+    │   │   ├── repository/ProductRepository.java
+    │   │   ├── service/ProductService.java
+    │   ├── pom.xml
+
+    ├── user-service
+    │   ├── src/main/java/com/example/userservice
+    │   │   ├── UserServiceApplication.java
+    │   │   ├── controller/UserController.java
+    │   │   ├── model/User.java
+    │   │   ├── repository/UserRepository.java
+    │   │   ├── service/UserService.java
+    │   ├── pom.xml
+
+    ├── order-service
+    │   ├── src/main/java/com/example/orderservice
+    │   │   ├── OrderServiceApplication.java
+    │   │   ├── controller/OrderController.java
+    │   │   ├── model/Order.java
+    │   │   ├── repository/OrderRepository.java
+    │   │   ├── service/OrderService.java
+    │   ├── pom.xml
+
+    ├── inventory-service
+    │   ├── src/main/java/com/example/inventoryservice
+    │   │   ├── InventoryServiceApplication.java
+    │   │   ├── controller/InventoryController.java
+    │   │   ├── model/Inventory.java
+    │   │   ├── repository/InventoryRepository.java
+    │   │   ├── service/InventoryService.java
+    │   ├── pom.xml
+
+    ├── pom.xml (Parent project)
