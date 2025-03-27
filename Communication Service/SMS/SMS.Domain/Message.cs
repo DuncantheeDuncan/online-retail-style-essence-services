@@ -4,5 +4,6 @@ public class Message
 {
     public string Text { get; set; }
     public MessageGroup Group { get; set; }
+    public DateTime TimeCreated { get; set; }
     public DateTime TimeSent { get; set; }
 }

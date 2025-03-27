@@ -1,4 +1,5 @@
-﻿namespace SMS.Infrastructure;
+﻿
+namespace SMS.Infrastructure;
 
 public class Class1
 {

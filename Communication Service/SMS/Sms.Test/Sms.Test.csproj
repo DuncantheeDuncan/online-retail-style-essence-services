@@ -20,6 +20,9 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+      <ProjectReference Include="..\SMS.Domain\SMS.Domain.csproj" />
+      <ProjectReference Include="..\SMS.AppService\SMS.AppService.csproj" />
+      <ProjectReference Include="..\SMS.Infrastructure\SMS.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
