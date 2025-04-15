@@ -28,6 +28,9 @@ public class AuthController {
 
            String tokenString = jwtUtil.generateToken(user.getUsername(), user.getRole());
 
+
+
+
            System.err.println("User name: "+ jwtUtil.extractUsername(tokenString));
            System.err.println("User Role: "+ jwtUtil.extractRole(tokenString));
 
