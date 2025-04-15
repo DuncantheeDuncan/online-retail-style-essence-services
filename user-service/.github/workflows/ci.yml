@@ -1,0 +1,24 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop, suer-service]  # Runs on push to main and develop branches
+  pull_request:
+    branches: [main]  # Runs when a PR is created targeting main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Fetches your code
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'  # Use OpenJDK
+          java-version: '11'  # Change to your Java version
+
+      - name: Build and Test
+        run: mvn clean test  # Runs your tests
