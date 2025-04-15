@@ -36,6 +36,6 @@ class JwtUtilTest {
         String role = mockedJwtUtil.extractRole("mocked.token");
 
         // Assert that the expected value is returned
-        assertEquals("ADMIN", role);
+        assertEquals("ADMIN", role);//testing git action
     }
 }
