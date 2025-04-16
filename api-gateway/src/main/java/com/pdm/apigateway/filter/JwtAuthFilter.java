@@ -29,11 +29,11 @@ public class JwtAuthFilter implements WebFilter {
                 String username = jwtUtil.extractUsername(token);
                 String role = jwtUtil.extractRole(token);
 
-                if (!jwtUtil.validateToken(token, username)) {
-                    ServerHttpResponse response = exchange.getResponse();
-                    response.setStatusCode(org.springframework.http.HttpStatus.UNAUTHORIZED);
-                    return response.setComplete();
-                }
+//                if (!jwtUtil.validateToken(token, username)) {
+//                    ServerHttpResponse response = exchange.getResponse();
+//                    response.setStatusCode(org.springframework.http.HttpStatus.UNAUTHORIZED);
+//                    return response.setComplete();
+//                }
 
                 // Add user info to request headers (to pass it to microservices)
                 request = exchange.getRequest().mutate()
