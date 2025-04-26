@@ -1,22 +1,25 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace Sms.Test;
 
 public class SmsTest
 {
-    private Contact _contact = new Contact("+263642681132");
-    [Fact]
-    public void ShouldGetValidContact()
+    [Theory]
+    [InlineData("+263642681132", true)]
+    [InlineData("0642681132", true)]
+    [InlineData(null, false)]
+    [InlineData("642681132", false)]
+    public void ShouldGetValidContact(string contactNumber, bool expected)
     {
-        // given a contact number
-        var contactNumber = _contact.PhoneNumber;
         // when checkContactValidity is called
         var checkNumberValidity = ContactService.CheckNumberValidity(contactNumber);
         // the length should be 10 digits long
-        Assert.True(checkNumberValidity);
+        Assert.Equal(expected,checkNumberValidity);
     }
-
+    
     [Fact]
-    public void ShouldCreateMessage()
+    public void ShouldCreateUser()
     {
-        // given 
+        
     }
 }

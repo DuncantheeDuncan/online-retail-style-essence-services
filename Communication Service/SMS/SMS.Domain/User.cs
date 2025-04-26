@@ -1,9 +1,9 @@
 namespace SMS.Domain;
 
-public class User
+public abstract class User(string name, string surname, Contact contact, Role role)
 {
-    public string Name { get; set; }
-    public string Surname { get; set; }
-    public Contact Contact { get; set; }
-    public Role Role { get; set; }
+    public string Name { get; set; } = name;
+    public string Surname { get; set; } = surname;
+    public Contact Contact { get; set; } = contact;
+    public Role Role { get; set; } = role;
 }
