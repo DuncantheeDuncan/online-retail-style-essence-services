@@ -13,16 +13,17 @@ public static class UserService
     {
         _users = UserHelper.GetFakeUsers();
     }
-    public static User? CreateValidUser(string name, string surname, Contact contact, Role role)
+    public static bool CreateValidUser(string name, string surname, Contact contact, Role role)
     {
         var user= new User(name, surname, contact, role);
 
-        if (ContactService.CheckNumberValidity(contact.PhoneNumber)) return null;
-        
         var validatedUser = UserValidator.Validate(user);
-        if (!validatedUser.IsValid) return null;
+        if (!validatedUser.IsValid) return false;
+        
+        if (!ContactService.AddContact(contact)) return false;
+        
         _users.Add(user);
-        return user;
+        return true;
     }
     
 }

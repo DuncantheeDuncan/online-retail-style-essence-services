@@ -2,7 +2,7 @@ using SMS.Domain;
 
 namespace Sms.Domain.Helpers;
 
-public class ContactHelper
+public static class ContactHelper
 {
     public static List<Contact> GetFakeContacts()
     {

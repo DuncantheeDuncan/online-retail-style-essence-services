@@ -32,5 +32,12 @@ public static class ContactService
         => _contacts
             .Select(contact => contact.PhoneNumber == number)
             .FirstOrDefault();
+
+    public static bool AddContact(Contact contact)
+    {
+        if (!CheckNumberValidity(contact.PhoneNumber)) return false;
+        _contacts.Add(contact);
+        return true;
+    }
      
 }
