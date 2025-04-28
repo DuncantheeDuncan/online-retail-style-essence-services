@@ -16,6 +16,9 @@ public static class UserService
     public static User? CreateValidUser(string name, string surname, Contact contact, Role role)
     {
         var user= new User(name, surname, contact, role);
+
+        if (ContactService.CheckNumberValidity(contact.PhoneNumber)) return null;
+        
         var validatedUser = UserValidator.Validate(user);
         if (!validatedUser.IsValid) return null;
         _users.Add(user);
