@@ -18,6 +18,7 @@ public static class UserService
         var user= new User(name, surname, contact, role);
 
         var validatedUser = UserValidator.Validate(user);
+        
         if (!validatedUser.IsValid) return false;
         
         if (!ContactService.AddContact(contact)) return false;

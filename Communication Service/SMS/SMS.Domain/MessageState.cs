@@ -1,6 +1,6 @@
 namespace SMS.Domain;
 
-public class MessageState
+public class MessageState(string status)
 {
-    public string Status { get; set; }
+    public string Status { get; set; } = status;
 }

@@ -1,7 +1,7 @@
 ﻿namespace SMS.Domain;
 
-public class MessageGroup
+public class MessageGroup(string name, MessageType type)
 {
-    public string Name { get; set; }
-    public MessageType Type { get; set; }
+    public string Name { get; set; } = name;
+    public MessageType Type { get; set; } = type;
 }
